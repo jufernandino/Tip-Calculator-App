@@ -44,12 +44,18 @@
     <div class="main_board">
         <div class="form">
             <form>
-                <label for="bill">Bill</label>
-                <input type="text" id="bill" name="bill">    
-
-                <label for="n_people">Number of People</label>
-                <input type="text" id="n_people" name="n_people">  
-
+                <div class="label_and_input">
+                    <label for="bill">Bill</label><br>
+                    <input type="text" id="bill" name="bill">    
+                </div>
+                <div class="label_and_input">
+                    <label for="select_tip">Select Tip %</label><br>
+                    <input type="checkbox" id="select_tip" name="select_tip">
+                </div>
+                <div class="label_and_input">
+                    <label for="n_people">Number of People</label><br>
+                    <input type="text" id="n_people" name="n_people">  
+                </div>
             </form>
         </div>
 
@@ -59,23 +65,6 @@
 
     </div>
 
+    <script type="module" src="src/main.jsx"></script>
 </body>
 </html>
-
-        /*
-
-        Select Tip %
-        5%
-        10%
-        15%
-        25%
-        50%
-        Custom
-
-        Tip Amount
-        / person
-
-        Total
-        / person
-
-        Reset */

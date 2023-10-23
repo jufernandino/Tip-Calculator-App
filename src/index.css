@@ -1,5 +1,12 @@
+@font-face { /*Inserir uma fonte nova*/
+  font-family: SpaceMono;
+  src: url("../font/SpaceMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'SpaceMono', monospace;
   line-height: 1.5;
   font-weight: 400;
 
@@ -36,6 +43,7 @@ body {
     color: hsl(186, 14%, 43%);
     letter-spacing: 5px;
     margin: 40px;
+    
 }
 .main_board {
     background-color: white;
@@ -49,25 +57,42 @@ body {
     gap: 15px;
 }
 .form {
-    background-color: hsl(183, 100%, 15%);
     width: 400px;
     height: 400px;
     border-radius: 10px;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    
 }
 .result {
     background-color: hsl(183, 100%, 15%);
     width: 400px;
     height: 400px;
-    padding: 20px;
-    box-sizing: border-box;
     border-radius: 10px;
+    box-sizing: border-box;
+
+    padding: 20px;
 }
 
+.label_and_input {
+    width: auto;
+    border: 1px solid black;
+}
 label {
     color: hsl(186, 14%, 43%);
-    display: block;
+}
+input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    width:fit-content;
+
+    padding: 10px;
+    
 }
 
 h1 {
