@@ -34,12 +34,40 @@ body {
 
 .title {
     color: hsl(186, 14%, 43%);
+    letter-spacing: 5px;
+    margin: 40px;
 }
 .main_board {
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: fit-content;
+    height: fit-content;
     border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.form {
+    background-color: hsl(183, 100%, 15%);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.result {
+    background-color: hsl(183, 100%, 15%);
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    display: block;
 }
 
 h1 {
@@ -64,6 +92,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+@media screen and (min-width: 600px) {
+    /* qualquer alteracao para telemovel */
 }
 
 @media (prefers-color-scheme: light) {
