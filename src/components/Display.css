@@ -1,0 +1,9 @@
+.display-row {
+    background-color: hsl(183, 100%, 15%);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    padding: 20px;
+}

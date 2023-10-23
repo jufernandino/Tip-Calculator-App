@@ -1,0 +1,51 @@
+.form {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+
+.label-and-input {
+    width: auto;
+    border: 1px solid black;
+}
+
+.tip-section {
+    width: auto;
+    border: 1px solid black;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    width:fit-content;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 3px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.input-bill, .input-n-people {
+    color: hsl(184, 14%, 56%);
+    text-align: right;
+    width: 350px;
+}
+
+.dollar-icon {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}

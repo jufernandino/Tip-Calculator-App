@@ -1,3 +1,5 @@
+import './Form.css'
+
 import dollarIcon from "/images/icon-dollar.svg";
 import personIcon from "/images/icon-person.svg";
 
@@ -5,10 +7,10 @@ const Form = () => {
     return (
         <div>
            <div className="form">
-                  <div className="label_and_input">
-                      <label className="label" htmlFor="bill">Bill</label>
-                      <input type="number" id="bill" name="bill" />  
-                      <img src={dollarIcon} aria-hidden="true" className="icon" />  
+                  <div className="label-and-input">
+                      <label className="label" htmlFor="bill">Bill</label><br/>
+                      <img src={dollarIcon} aria-hidden="true" className="dollar-icon" />  
+                      <input className='input-bill' type="number" id="bill" name="bill" />  
                   </div>
 
                   <div className="tip-section">
@@ -42,16 +44,15 @@ const Form = () => {
                     </div>
                   </div>
 
-                  <div className="label_and_input">
+                  <div className="label-and-input">
                         <div className="label-wrapper">
                             <label htmlFor="n_people">Number of People</label>
                             <p>Error</p>
                         </div>
-                        <input type="number" id="n_people" name="n_people" />
+                        <input className='input-n-people' type="number" id="n_people" name="n_people" />
                         <img src={personIcon} aria-hidden="true" className="icon" />    
                   </div>
             </div>
-
         </div>
     )
 }

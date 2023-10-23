@@ -1,3 +1,5 @@
+import './Display.css'
+
 const Display = () => {
     return (
         <div>

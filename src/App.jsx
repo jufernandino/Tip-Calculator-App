@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState} from 'react'
 import './App.css'
 
 //Importar imagens
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className = "app">
-      <img src={logo} alt="Splitte" />
+      <img className='img_logo' src={logo} alt="Splitter" />
       <div className='container'>
         <Form />
         <Display />
