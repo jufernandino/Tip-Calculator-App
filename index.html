@@ -1,70 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="src/index.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <style>
-    :root{
-      --strong-cyan:hsl(172, 67%, 45%); 
-      --very-dark-cyan: hsl(183, 100%, 15%);
-      --dark-grayish-cyan: hsl(186, 14%, 43%);
-      --grayish-cyan: hsl(184, 14%, 56%);
-      --light-grayish-cyan: hsl(185, 41%, 84%);
-      --very-light-grayish-cyan: hsl(189, 41%, 97%);
-      --white: hsl(0, 0%, 100%);
-    }
-    body{
-      background: var(--light-grayish-cyan);
-      font-size: 24px;
-    }
-    .attribution { 
-      font-size: 11px; 
-      text-align: center; 
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%); 
-    }
-    :root
-  </style>
-</head>
-
-<body>
+    <link rel="stylesheet" href="src/index.css">
     
-    <p class="title">
-        SPLI <br> TTER
-    </p>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-    <div class="main_board">
-        <div class="form">
-            <form>
-                <div class="label_and_input">
-                    <label for="bill">Bill</label><br>
-                    <input type="text" id="bill" name="bill">    
-                </div>
-                <div class="label_and_input">
-                    <label for="select_tip">Select Tip %</label><br>
-                    <input type="checkbox" id="select_tip" name="select_tip">
-                </div>
-                <div class="label_and_input">
-                    <label for="n_people">Number of People</label><br>
-                    <input type="text" id="n_people" name="n_people">  
-                </div>
-            </form>
-        </div>
+    <style>
+      :root{
+        --strong-cyan:hsl(172, 67%, 45%); 
+        --very-dark-cyan: hsl(183, 100%, 15%);
+        --dark-grayish-cyan: hsl(186, 14%, 43%);
+        --grayish-cyan: hsl(184, 14%, 56%);
+        --light-grayish-cyan: hsl(185, 41%, 84%);
+        --very-light-grayish-cyan: hsl(189, 41%, 97%);
+        --white: hsl(0, 0%, 100%);
+      }
+      body{
+        background: var(--light-grayish-cyan);
+        font-size: 24px;
+      }
+      .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+      }
+    </style>
+  </head>
 
-        <div class="result">
-            
-        </div>
+  <body>
+    <!--p class="title">
+      SPLI <br> TTER
+    </p-->
+    
+    <!--div class="main_board">
+      <div class="form">
+        <form>
+          <div class="label_and_input">
+            <label for="bill">Bill</label><br>
+            <input type="text" id="bill" name="bill">    
+          </div>
+          <div class="label_and_input">
+            <label for="select_tip">Select Tip %</label><br>
+            <input type="checkbox" id="select_tip" name="select_tip">
+          </div>
+          <div class="label_and_input">
+            <label for="n_people">Number of People</label><br>
+            <input type="text" id="n_people" name="n_people">  
+          </div>
+        </form>
+      </div-->
 
+      <div class="result"> 
+        <div id="root"></div>
+        <script type="module" src="src/main.jsx"></script>
+      </div>
     </div>
-
-    <script type="module" src="src/main.jsx"></script>
-</body>
+      
+  
+  </body>
 </html>
