@@ -24,11 +24,22 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: hsl(186, 14%, 43%);
+}
+.main_board {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 h1 {
