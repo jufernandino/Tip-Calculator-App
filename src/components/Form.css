@@ -13,18 +13,63 @@
 
 .label-and-input {
     width: auto;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+.label {
+    font-family: "SpaceMono";
+    font-size: medium;
+    font-weight: 900;
 }
 
 .tip-section {
     width: auto;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
+
+.tip-amount-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tip-amount-line1 {
+    display: flex;
+}
+
+.tip-amount-line2 {
+    display: flex;
+}
+
+.tip-amount {
+    flex: 0 1 calc(33.33% - 1rem);
+    color: white;
+    margin: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+
+}
+
+.custom-input {
+    width: 100%;
+}
+
+
+.tip-amount:hover {
+    background-color: hsl(210, 36%, 70%);
+    color: white;
+}
+
 
 input {
     background-color: hsl(189, 41%, 97%);
     border: none;
-    width:fit-content;
     padding: 10px;
     padding-left: 30px;
     border-radius: 3px;
@@ -35,7 +80,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 input[type="number"] {
-    -moz-appearance: textfield; /* Firefox */
+    -moz-appearance: textfield;
 }
 
 .input-bill, .input-n-people {
@@ -46,6 +91,10 @@ input[type="number"] {
 
 .dollar-icon {
     position: absolute;
-    top: 75%;
-    left: 5%;
+}
+
+[name="tip"] {
+    opacity: 0;
+    position: absolute
+    inset: 0;
 }

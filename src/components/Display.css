@@ -1,9 +1,62 @@
-.display-row {
+.display{
     background-color: hsl(183, 100%, 15%);
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-sizing: border-box;
-
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.display-group1{
+    display: grid;
+    gap:1em;
+}
+.display-row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.display-label {
+    display: grid;
+    justify-items: start;
+}
+.header{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.unit {
+    color: white;
+    font-size: .8rem;
+    margin-top:-5px;
+}
+
+.display-amt{
+    color: hsl(172, 67%, 45%); 
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color:hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    color:hsl(183, 100%, 15%);
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color:hsl(172, 61%, 81%);
+}
+
+
+
+
